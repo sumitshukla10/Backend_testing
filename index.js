@@ -22,9 +22,15 @@ app.get("/logout",(req,res)=>{
     res.send(`<h1>i am logout route</h1>`);
 })
 
+app.get("/github",(req,res)=>{
+    res.send("hello i am github");
+})
+
 app.get("*",(req,res)=>{
     res.send(`route doen't exit`);
 });
+
+
 
 app.listen(process.env.PORT,()=>{
     console.log(`listening to the port ${port}`);
